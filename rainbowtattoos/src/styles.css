@@ -1,0 +1,18 @@
+body {
+    background-image: url("./images/sketch_1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    background-attachment: fixed;
+}
+body.bg-sketch {
+    background-image: url("./images/sketch_bg.png");
+}
+body.bg-tattoo {
+    background-image: url("./images/cat_banner.jpg");
+}
+body.bg-link {
+    background-image: url("./images/flash_flowers.png");
+}
