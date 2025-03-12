@@ -9,7 +9,7 @@ export function Footer() {
     const navigate = useNavigate();
 
     return (
-        <div className="d-flex justify-content-center mb-1 fixed-bottom">       
+        <div className="d-flex justify-content-center mb-1 "/*fixed-bottom*/>    
             <ButtonGroup aria-label="Bouton liens exercicesrang1">
                 <div>                             
                     <Button variant='secondary' onClick={() => navigate("/pages/sketchs")} className="rounded-end-0" style={{width:106}}><strong>Croquis</strong></Button>

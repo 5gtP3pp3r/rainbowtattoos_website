@@ -1,11 +1,14 @@
 body {
-    background-image: url("./images/sketch_1.jpg");
+    background-image: url("default");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     margin: 0;
     background-attachment: fixed;
+}
+body.bg-home {
+    background-image: url("./images/sketch_1.jpg");
 }
 body.bg-sketch {
     background-image: url("./images/sketch_bg.png");
@@ -15,4 +18,10 @@ body.bg-tattoo {
 }
 body.bg-link {
     background-image: url("./images/flash_flowers.png");
+}
+
+.img-blur-border {
+    position: relative;
+    border-radius: 25px; 
+    box-shadow: 0 0 40px rgba(0, 0, 0, 50);
 }

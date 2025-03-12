@@ -10,9 +10,11 @@ const sketchsList: ImagesProps['imagesList'] = [
 ];
 
 export function Sketchs(){
+    const imgType: string = "Croquis";
+    const color: string = "white";
     return (
         <div>
-            <ImageListing imagesList={sketchsList} />
+            <ImageListing imagesList={sketchsList} imgType={imgType} txtColor={color} />
         </div>
     )
 }
