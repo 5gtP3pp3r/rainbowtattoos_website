@@ -15,7 +15,7 @@ const regexPatterns: { [key: string]: RegExp } = {
 const validationMessages: { [key: string]: string } = {
     firstName: "Majuscule et au moins 3 caractères",
     lastName: "Majuscule et au moins 3 caractères",
-    email: 'Utilisez la forme "exemple@service.domaine"',
+    email: "Utilisez un courriel valide",
 };
 
 export function MailForm() {
@@ -61,7 +61,7 @@ export function MailForm() {
         <input type="hidden" name="form-name" value="contact" />
             <Row>                
                 <Col sm={12} xl={6}>
-                    <div className='mt-5' style={{ height:'90px'}}>
+                    <div className='mt-5' style={{ height:'110px'}}>
                         <Form.Label>
                             <h5 style={{ color: "red" }}>Prénom</h5>
                         </Form.Label>
@@ -88,7 +88,7 @@ export function MailForm() {
                     </div>
                 </Col>
                 <Col sm={12} xl={6}>
-                    <div className='mt-5' style={{ height:'90px'}}>
+                    <div className='mt-5' style={{ height:'110px'}}>
                         <Form.Label>
                             <h5 style={{ color: "red" }}>Nom</h5>
                         </Form.Label>
@@ -114,7 +114,7 @@ export function MailForm() {
                     </div>
                 </Col>                       
             </Row>
-            <div className='mt-5' style={{ height:'90px'}}>
+            <div className='mt-5' style={{ height:'110px'}}>
                 <Form.Label>
                     <h5 style={{ color: "red" }}>Courriel</h5>
                 </Form.Label>

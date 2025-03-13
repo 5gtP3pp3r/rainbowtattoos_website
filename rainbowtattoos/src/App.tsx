@@ -9,6 +9,7 @@ import { NavBarre } from './NavBarre';
 import { Footer } from './Footer';
 import { Page404 } from './pages/Page404';
 
+import { ScrollToTop } from "./ScrollToTop";
 import { HomePage } from './pages/home/homePage'; 
 import { SketchsPage } from './pages/sketchs/SketchsPage';
 import { TattoosPage } from './pages/tattoos/TattoosPages';
@@ -20,6 +21,7 @@ export function App() {
 
   return (  
       <BrowserRouter>
+      <ScrollToTop />
         <NavBarre />
         <Container>
           <Routes>

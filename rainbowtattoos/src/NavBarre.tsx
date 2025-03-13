@@ -34,8 +34,8 @@ export function NavBarre() {
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link as={Link} to="/"><h4 style={{ color: 'white' }}>Acceuil</h4></Nav.Link>
                   <Nav.Link as={Link} to="pages/sketchs"><h5 style={{ color: 'white' }}>Mes croquis</h5></Nav.Link>
-                  <Nav.Link as={Link} to="pages/tattoos"><h5 style={{ color: 'white' }}>tattoos réalisés</h5></Nav.Link>
-                  <Nav.Link as={Link} to="pages/links"><h5 style={{ color: 'white' }}>Liens</h5></Nav.Link>             
+                  <Nav.Link as={Link} to="pages/tattoos"><h5 style={{ color: 'white' }}>Tattoos réalisés</h5></Nav.Link>
+                  <Nav.Link as={Link} to="pages/links"><h5 style={{ color: 'white' }}>Nous rejoindre</h5></Nav.Link>             
                 </Nav>                
               </Offcanvas.Body>
             </Navbar.Offcanvas>

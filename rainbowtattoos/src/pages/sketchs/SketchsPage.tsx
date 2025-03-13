@@ -4,7 +4,7 @@ import { PageTemplate } from '../../PageTemplate';
 export function SketchsPage() {
   return (
     <PageTemplate 
-      title="Croquis" 
+      title="Mes croquis" 
       previous="/" 
       nextPage="/pages/tattoos" 
       bgImageClass="bg-sketch"
