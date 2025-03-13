@@ -6,7 +6,7 @@ export function LinksPage() {
     <PageTemplate 
       title="Nous rejoindres" 
       previous="/pages/tattoos" 
-      nextPage="/pages/sketchs" 
+      nextPage="/" 
       bgImageClass="bg-link"
       txtColor="red"
     >

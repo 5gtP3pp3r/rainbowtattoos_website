@@ -5,7 +5,7 @@ export function HomePage() {
   return (
     <PageTemplate 
       title="Acceuil" 
-      previous="/pages/tattoos" 
+      previous="/pages/links" 
       nextPage="/pages/sketchs" 
       bgImageClass="bg-home"
       txtColor='white'
