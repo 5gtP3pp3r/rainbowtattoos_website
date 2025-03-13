@@ -8,10 +8,10 @@ export function Links() {
   return (
     <div>
       <Row>
-        <Col lg={12} xl={7}>
+        <Col lg={12} xl={6}>
           <MailForm />
         </Col>
-        <Col lg={12} xl={5}>
+        <Col lg={12} xl={6}>
           <h1><FaFacebookSquare style={{ color: "blue" }} /></h1>
           <h1><FaSquareInstagram style={{ color: "blue" }}/></h1>
         </Col>
