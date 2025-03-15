@@ -8,17 +8,17 @@ interface ValidationProps {
   }
 
 export function AlertFieldValidation({ value, regex, text }: ValidationProps): JSX.Element | null {
-  const isValid = value.trim() === "" || new RegExp(regex).test(value);
+  const isValid: boolean = value.trim() === "" || new RegExp(regex).test(value);
 
   return !isValid ? <Alert 
                       variant="warning" 
                       style={{ 
-                        width: "290px", 
-                        color: "red"
-                        //height: "35px",
-                        //display: "flex", 
-                        //alignItems: "center",                          
-                        //marginTop: "10px"
+                        width: "300px", 
+                        color: "red",
+                        height: "35px",
+                        display: "flex",
+                        alignItems: "center",                        
+                        marginTop: "10px"
                       }}>
                     <p>{text}</p></Alert> : null;  
 }

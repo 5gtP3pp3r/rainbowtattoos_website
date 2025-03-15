@@ -11,11 +11,13 @@ const regexPatterns: { [key: string]: RegExp } = {
     firstName: /^[A-Z].{2,}$/,
     lastName: /^[A-Z].{2,}$/,
     email: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+    textarea: /^[a-zA-Z0-9.].{10,}$/
 };
 const validationMessages: { [key: string]: string } = {
     firstName: "Majuscule et au moins 3 caractères",
     lastName: "Majuscule et au moins 3 caractères",
     email: "Utilisez un courriel valide",
+    textarea: "SVP, au moins dix caractères"
 };
 
 export function MailForm() {
@@ -60,7 +62,7 @@ export function MailForm() {
         >
         <input type="hidden" name="form-name" value="contact" />
             
-                    <div className='mt-5 ms-5' style={{ height:'105px'}}>
+                    <div className='mt-5 ms-5' style={{ height:'80px'}}>
                         <Form.Label>
                             <h5 style={{ color: "beige" }}>Prénom</h5>
                         </Form.Label>
@@ -87,7 +89,7 @@ export function MailForm() {
                     </div>
                 
                 
-                    <div className='mt-5 ms-5 me-5' style={{ height:'105px'}}>
+                    <div className='mt-5 ms-5 me-5' style={{ height:'80px'}}>
                         <Form.Label>
                             <h5 style={{ color: "beige" }}>Nom</h5>
                         </Form.Label>
@@ -112,7 +114,7 @@ export function MailForm() {
                         </div>
                     </div>
                 
-            <div className='mt-5 ms-5' style={{ height:'105px'}}>
+            <div className='mt-5 ms-5' style={{ height:'80px'}}>
                 <Form.Label>
                     <h5 style={{ color: "beige" }}>Courriel</h5>
                 </Form.Label>
@@ -154,6 +156,13 @@ export function MailForm() {
                         <CheckIcons isTrue={IsTextareaFilded("textarea")} />
                     </InputGroup.Text>
                     </InputGroup>
+                    <div className='mt-1'>
+                            <AlertFieldValidation
+                                value={formValue.textarea}
+                                regex={regexPatterns.textarea}
+                                text={validationMessages.textarea}
+                            />
+                        </div>
                 </Form.Group>
             </div>            
                 { allFieldsValide && (
