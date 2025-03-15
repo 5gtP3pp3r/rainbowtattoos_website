@@ -33,6 +33,7 @@ body.bg-link {
 .navbar-container {
     display: flex;
     align-items: flex-end; 
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 .navbar-left {
     display: flex;
@@ -87,4 +88,9 @@ body.bg-link {
     position: relative;
     border-radius: 25px; 
     box-shadow: 0 0 40px rgba(0, 0, 0, 50);
+}
+
+.footer-fond {
+    height:'300px';
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
