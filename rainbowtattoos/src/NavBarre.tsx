@@ -14,8 +14,8 @@ export function NavBarre() {
             </div> 
             <Nav className="navbar-links mb-5">
               <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>Acceuil</NavLink>
-              <NavLink to="/pages/sketchs" className={({ isActive }) => isActive ? "active" : ""}>Portfolio</NavLink>
-              <NavLink to="/pages/links" className={({ isActive }) => isActive ? "active" : ""}>Contacter</NavLink>       
+              <NavLink to="/pages/portfolio" className={({ isActive }) => isActive ? "active" : ""}>Portfolio</NavLink>
+              <NavLink to="/pages/contacts" className={({ isActive }) => isActive ? "active" : ""}>Contacter</NavLink>       
             </Nav>
         </Navbar>       
   );

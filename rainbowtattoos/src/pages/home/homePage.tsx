@@ -4,8 +4,8 @@ import { PageTemplate } from '../../PageTemplate';
 export function HomePage() {
   return (
     <PageTemplate 
-      previous="/pages/links" 
-      nextPage="/pages/sketchs" 
+      previous="/pages/contacts" 
+      nextPage="/pages/portfolio" 
       bgImageClass="bg-home"
       txtColor='beige'
     >

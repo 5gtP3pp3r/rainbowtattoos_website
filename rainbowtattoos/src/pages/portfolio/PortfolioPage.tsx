@@ -1,15 +1,15 @@
-import { Sketchs } from './Sketchs';  
+import { Portfolio } from './Portfolio';  
 import { PageTemplate } from '../../PageTemplate';
 
-export function SketchsPage() {
+export function PortfolioPage() {
   return (
     <PageTemplate 
       previous="/" 
-      nextPage="/pages/links" 
+      nextPage="/pages/contacts" 
       bgImageClass="bg-sketch"
       txtColor='beige'
     >
-      {<Sketchs />}
+      {<Portfolio />}
     </PageTemplate>
   );
 }

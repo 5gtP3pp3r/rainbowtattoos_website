@@ -9,9 +9,9 @@ import { Page404 } from './pages/Page404';
 
 import { ScrollToTop } from "./ScrollToTop";
 import { HomePage } from './pages/home/homePage'; 
-import { SketchsPage } from './pages/sketchs/SketchsPage';
+import { PortfolioPage } from './pages/portfolio/PortfolioPage';
 //import { TattoosPage } from './pages/tattoos/TattoosPages';
-import { LinksPage } from './pages/links/LinksPage';
+import { ContactsPage } from './pages/contacts/ContactsPage';
 import "./styles.css";
 
 
@@ -24,9 +24,9 @@ export function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="*" element={<Page404 />} />
-            <Route path="pages/sketchs" element={<SketchsPage />} />
+            <Route path="pages/portfolio" element={<PortfolioPage />} />
             {/*<Route path="pages/tattoos" element={<TattoosPage />} />*/}
-            <Route path="pages/links" element={<LinksPage />} />
+            <Route path="pages/contacts" element={<ContactsPage />} />
           </Routes>        
         <Footer />
       </BrowserRouter>

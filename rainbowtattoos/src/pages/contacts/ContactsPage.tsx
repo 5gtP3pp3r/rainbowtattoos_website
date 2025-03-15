@@ -1,15 +1,15 @@
-import { Links } from './Links';  
+import { Contacts } from './Contacts';  
 import { PageTemplate } from '../../PageTemplate';
 
-export function LinksPage() {
+export function ContactsPage() {
   return (
     <PageTemplate 
-      previous="/pages/sketchs" 
+      previous="/pages/portfolio" 
       nextPage="/" 
       bgImageClass="bg-link"
       txtColor="beige"
     >
-      {<Links />}
+      {<Contacts />}
     </PageTemplate>
   );
 }

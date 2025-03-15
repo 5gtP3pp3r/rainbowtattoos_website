@@ -1,7 +1,7 @@
 import { ImageListing } from '../../ImagesList/ImagesListing';  
 import { ImagesProps } from '../../ImagesList/ImagesProps'; 
 
-const sketchsList: ImagesProps['imagesList'] = [
+const portfolioList: ImagesProps['imagesList'] = [
   { id: 1, imageName: 'bunny_guy.png' },
   { id: 2, imageName: 'cat_banner.jpg' },
   { id: 3, imageName: 'flash_flowers.png' },
@@ -16,12 +16,12 @@ const sketchsList: ImagesProps['imagesList'] = [
   { id:11, imageName: 'Winged.png' }
 ];
 
-export function Sketchs(){
+export function Portfolio(){
     const imgType: string = "Croquis";
     const color: string = "beige";
     return (
         <div>
-            <ImageListing imagesList={sketchsList} imgType={imgType} txtColor={color} />
+            <ImageListing imagesList={portfolioList} imgType={imgType} txtColor={color} />
         </div>
     )
 }

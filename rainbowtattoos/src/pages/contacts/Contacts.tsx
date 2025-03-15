@@ -4,7 +4,7 @@ import { FaSquareInstagram } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { MailForm } from './MailForm';
 
-export function Links() {
+export function Contacts() {
   return (
     <Row className='d-flex justify-content-around'>
       <Col lg={12} xl={7}>
