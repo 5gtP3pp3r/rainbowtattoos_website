@@ -37,8 +37,7 @@ export function MailForm() {
 
     const isFieldValide = (field: string) => {
         const value = formValue[field];
-        const regex = new RegExp(regexPatterns[field]);
-        return regex.test(value);
+        return regexPatterns[field].test(value);
     };
     const IsTextareaFilded = (field: string) => {
         const value = formValue[field];
@@ -65,7 +64,7 @@ export function MailForm() {
                         <Form.Label>
                             <h5 style={{ color: "beige" }}>Prénom</h5>
                         </Form.Label>
-                        <InputGroup style={{ width: "300px" }}>
+                        <InputGroup style={{ maxWidth: "300px" }}>
                             <Form.Control
                                 type="text"
                                 value={formValue.firstName}
@@ -92,7 +91,7 @@ export function MailForm() {
                         <Form.Label>
                             <h5 style={{ color: "beige" }}>Nom</h5>
                         </Form.Label>
-                        <InputGroup style={{ width: "300px" }}>
+                        <InputGroup style={{ maxWidth: "300px" }}>
                             <Form.Control
                                 type="text"
                                 value={formValue.lastName}
@@ -117,7 +116,7 @@ export function MailForm() {
                 <Form.Label>
                     <h5 style={{ color: "beige" }}>Courriel</h5>
                 </Form.Label>
-                <InputGroup style={{ width: "450px" }}>
+                <InputGroup style={{ maxWidth: "450px" }}>
                     <Form.Control
                         type="text"
                         value={formValue.email}
@@ -142,7 +141,7 @@ export function MailForm() {
                     <Form.Label>
                         <h5 style={{ color: "beige" }}>Message</h5>
                     </Form.Label>
-                    <InputGroup style={{ width: "800px" }}>
+                    <InputGroup style={{ maxWidth: "800px" }}>
                     <Form.Control 
                         as="textarea" 
                         rows={8} 
@@ -158,9 +157,13 @@ export function MailForm() {
                 </Form.Group>
             </div>            
                 { allFieldsValide && (
-                   <div className='d-flex justify-content-center'> 
-                        <Button type="submit" variant="success">
-                            Envoyer le courriel
+                    <div className='d-flex justify-content-center'> 
+                        <Button 
+                            type="submit" 
+                            variant="success"
+                            style={{height:75, maxWidth:300}}
+                        >                            
+                            <h4>M'envoyer le courriel</h4>
                         </Button>
                     </div>
                 )}                         
