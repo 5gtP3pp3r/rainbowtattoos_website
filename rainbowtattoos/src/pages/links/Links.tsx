@@ -25,7 +25,8 @@ export function Links() {
         </div>
         <div className='m-5 gap-5' style={{ display: "flex", alignItems: "center"}}>
           <h1><FaFacebookSquare style={{ color: "beige" }} /></h1>
-          <a href="" style={{ color: "beige" }}><h3>Studio Théo Tattoo</h3></a>
+          <a href="https://www.facebook.com/search/top?q=th%C3%A9o%20tattoo" 
+             style={{ color: "beige" }}><h3>Studio Théo Tattoo</h3></a>
         </div>
         <div className='m-5 gap-5' style={{ display: "flex", alignItems: "center"}}>
           <h1><FaSquareInstagram style={{ color: "beige" }} /></h1>

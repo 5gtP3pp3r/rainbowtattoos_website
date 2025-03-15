@@ -7,6 +7,13 @@ const sketchsList: ImagesProps['imagesList'] = [
   { id: 3, imageName: 'flash_flowers.png' },
   { id: 4, imageName: 'sketch_1.jpg' },
   { id: 5, imageName: 'sketch_2.jpg' },
+  { id: 6, imageName: 'Faces.png' },
+  { id: 7, imageName: 'Fruits.png' },
+  { id: 8, imageName: 'Knifes.png' },
+  { id: 8, imageName: 'Pierrot.png' },
+  { id: 9, imageName: 'Strawberry.png' },
+  { id:10, imageName: 'Underskull.png' },
+  { id:11, imageName: 'Winged.png' }
 ];
 
 export function Sketchs(){
