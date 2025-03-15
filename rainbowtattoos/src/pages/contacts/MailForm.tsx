@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Form, Button, InputGroup } from "react-bootstrap";
-import { useState } from "react";
+import { JSX, useState } from "react";
 //import { Row, Col }from 'react-bootstrap';
 
 import { AlertFieldValidation } from './AlertValidation';
@@ -20,7 +20,7 @@ const validationMessages: { [key: string]: string } = {
     textarea: "SVP, au moins dix caractères"
 };
 
-export function MailForm() {
+export function MailForm(): JSX.Element {
     const [allFieldsValide, setAllFieldValide] = useState<boolean>(false);
     const [formValue, setFormValues] = useState<{ [key: string]: string }>({
         firstName: "",
@@ -28,24 +28,25 @@ export function MailForm() {
         email: "",
         textarea: ""
     });        
-    const handleChange = (field: string) => (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        const value = event.target.value;
-        setFormValues(prevValues => {
-            const newValues = { ...prevValues, [field]: value };
-            validateForm();
-            return newValues;
+    const handleChange = (field: string) => (
+        event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void => {
+            const value: string = event.target.value;
+            setFormValues(prevValues => {
+                const newValues = { ...prevValues, [field]: value };
+                validateForm();
+                return newValues;
         });
     };
 
-    const isFieldValide = (field: string) => {
-        const value = formValue[field];
+    const isFieldValide = (field: string): boolean => {
+        const value: string = formValue[field];
         return regexPatterns[field].test(value);
     };
-    const IsTextareaFilded = (field: string) => {
-        const value = formValue[field];
+    const IsTextareaFilded = (field: string): boolean => {
+        const value: string = formValue[field];
         return value.length > 10;
     };
-    const validateForm = () => {
+    const validateForm = (): void => {
         setAllFieldValide(
             isFieldValide("firstName") &&
             isFieldValide("lastName") &&

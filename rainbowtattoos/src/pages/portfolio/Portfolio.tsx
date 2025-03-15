@@ -1,3 +1,4 @@
+import { JSX } from 'react';
 import { ImageListing } from '../../ImagesList/ImagesListing';  
 import { ImagesProps } from '../../ImagesList/ImagesProps'; 
 
@@ -16,12 +17,11 @@ const portfolioList: ImagesProps['imagesList'] = [
   { id:11, imageName: 'Winged.png' }
 ];
 
-export function Portfolio(){
-    const imgType: string = "Croquis";
+export function Portfolio(): JSX.Element {
     const color: string = "beige";
     return (
         <div>
-            <ImageListing imagesList={portfolioList} imgType={imgType} txtColor={color} />
+            <ImageListing imagesList={portfolioList}  txtColor={color} />
         </div>
     )
 }

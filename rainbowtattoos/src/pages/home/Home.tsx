@@ -1,6 +1,7 @@
+import { JSX } from 'react';
 import { Container,  Col, Row } from 'react-bootstrap';
 
-export function Home() {
+export function Home(): JSX.Element {
     return (      
         <Container fluid >            
             <Row className='g-5 mt-5'>         

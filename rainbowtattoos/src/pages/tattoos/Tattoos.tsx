@@ -1,3 +1,4 @@
+import { JSX } from 'react';
 import { ImageListing } from '../../ImagesList/ImagesListing';  
 import { ImagesProps } from '../../ImagesList/ImagesProps';  
 
@@ -9,12 +10,11 @@ const tattoosList: ImagesProps['imagesList'] = [
   { id: 5, imageName: 'sketch_2.jpg' },
 ];
 
-export function Tattoos(){
-    const imgType: string = "Tattoo";
+export function Tattoos(): JSX.Element {
     const color: string = "beige";
     return (
         <div>
-            <ImageListing imagesList={tattoosList} imgType={imgType} txtColor={color} />
+            <ImageListing imagesList={tattoosList} txtColor={color} />
         </div>
     )
 }

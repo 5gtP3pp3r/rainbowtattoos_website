@@ -1,7 +1,8 @@
 import { Portfolio } from './Portfolio';  
 import { PageTemplate } from '../../PageTemplate';
+import { JSX } from 'react';
 
-export function PortfolioPage() {
+export function PortfolioPage(): JSX.Element {
   return (
     <PageTemplate 
       previous="/" 

@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React from 'react';
+import React, { JSX } from 'react';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router';
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md"; /*<MdOutlineKeyboardDoubleArrowRight />*/
@@ -13,7 +13,7 @@ interface PageTemplateProps {
   txtColor: string
 }
 
-export function PageTemplate({ children, previous, nextPage, bgImageClass, txtColor }: PageTemplateProps) {
+export function PageTemplate({ children, previous, nextPage, bgImageClass, txtColor }: PageTemplateProps) : JSX.Element {
   const navigate = useNavigate();
 
   useEffect(() => {

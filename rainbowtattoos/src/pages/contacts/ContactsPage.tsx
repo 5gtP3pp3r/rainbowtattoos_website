@@ -1,7 +1,8 @@
+import { JSX } from 'react';
 import { Contacts } from './Contacts';  
 import { PageTemplate } from '../../PageTemplate';
 
-export function ContactsPage() {
+export function ContactsPage(): JSX.Element {
   return (
     <PageTemplate 
       previous="/pages/portfolio" 

@@ -1,10 +1,11 @@
+import { JSX } from 'react';
 import { Row, Col }from 'react-bootstrap';
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { MailForm } from './MailForm';
 
-export function Contacts() {
+export function Contacts(): JSX.Element {
   return (
     <Row>
       <Col lg={12} xl={7}>

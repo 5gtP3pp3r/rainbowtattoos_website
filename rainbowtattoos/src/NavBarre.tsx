@@ -1,10 +1,10 @@
 //import { Container, Row, Col } from 'react-bootstrap';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-
+import { JSX } from 'react';
+import { Nav } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 
-export function NavBarre() {
+export function NavBarre(): JSX.Element {
   return (       
         <Navbar collapseOnSelect expand="lg" className="navbar-container">   
             <div >
