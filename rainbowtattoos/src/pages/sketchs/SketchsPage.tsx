@@ -4,11 +4,10 @@ import { PageTemplate } from '../../PageTemplate';
 export function SketchsPage() {
   return (
     <PageTemplate 
-      title="Mes croquis" 
       previous="/" 
-      nextPage="/pages/tattoos" 
+      nextPage="/pages/links" 
       bgImageClass="bg-sketch"
-      txtColor='white'
+      txtColor='beige'
     >
       {<Sketchs />}
     </PageTemplate>

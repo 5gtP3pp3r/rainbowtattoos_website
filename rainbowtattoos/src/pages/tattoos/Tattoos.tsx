@@ -11,7 +11,7 @@ const tattoosList: ImagesProps['imagesList'] = [
 
 export function Tattoos(){
     const imgType: string = "Tattoo";
-    const color: string = "white";
+    const color: string = "beige";
     return (
         <div>
             <ImageListing imagesList={tattoosList} imgType={imgType} txtColor={color} />

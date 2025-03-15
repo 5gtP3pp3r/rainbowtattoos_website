@@ -2,43 +2,40 @@ import { Row, Col }from 'react-bootstrap';
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
-
 import { MailForm } from './MailForm';
 
 export function Links() {
   return (
-    <div>
-      <Row>
-        <Col lg={12} xl={6}>
-          <div className='mt-5' style={{ width: "550px"}}>
-            <strong><p style={{ color: 'red', fontSize: '20px' }}>
-              Vous avez des questions ou vous avez des idées de projet?
-              Prenez le temps de remplis ce formulaire et de me le faire 
-              parvenir. Je devrais vous donner une réponse dans les 48 heures.
-            </p></strong>
-          </div>
-          <MailForm />
-        </Col>
-        <Col lg={12} xl={6}>
-          <div className='mt-5' style={{ width: "550px"}}>
-            <strong><p style={{ color: 'red', fontSize: '20px' }}>
-              Venez nous visiter sur les réseaux sociaux!
-            </p></strong>
-          </div>
-          <div className='mt-5' style={{ display: "flex", alignItems: "center", gap: "30px" }}>
-            <h1><FaFacebookSquare style={{ color: "blue" }} /></h1>
-            <a href="" style={{ color: "blue" }}><h3>Studio Théo Tattoo</h3></a>
-          </div>
-          <div style={{ display: "flex", alignItems: "center", gap: "30px" }}>
-            <h1><FaSquareInstagram style={{ color: "red" }} /></h1>
-            <a href="" style={{ color: "red" }}><h3>RainBow Tattoo</h3></a>
-          </div>
-          <div style={{ display: "flex", alignItems: "center", gap: "30px" }}>
-            <h1><FaXTwitter style={{ color: "black" }} /></h1>
-            <a href="" style={{ color: "black" }}><h3>RainBow Tattoo</h3></a>
-          </div>
-        </Col>
-      </Row>      
-    </div>
+    <Row className='d-flex justify-content-around'>
+      <Col lg={12} xl={7}>
+        <div className='m-5' >
+          <strong><p className='m-5 pe-5 pb-5' style={{ color: 'beige', fontSize: '25px' }}>
+            Vous avez des questions ou vous avez des idées de projet?
+            Prenez le temps de remplir ce formulaire et de me le faire 
+            parvenir. Je devrais vous donner une réponse dans les 48 heures.
+          </p></strong>
+        </div>
+        <MailForm />
+      </Col>        
+      <Col lg={12} xl={5} className='mt-5'>
+        <div className='pb-5'>
+          <strong><p style={{ color: 'beige', fontSize: '25px' }}>
+            Venez nous visiter sur les réseaux sociaux!
+          </p></strong>
+        </div>
+        <div className='m-5 gap-5' style={{ display: "flex", alignItems: "center"}}>
+          <h1><FaFacebookSquare style={{ color: "beige" }} /></h1>
+          <a href="" style={{ color: "beige" }}><h3>Studio Théo Tattoo</h3></a>
+        </div>
+        <div className='m-5 gap-5' style={{ display: "flex", alignItems: "center"}}>
+          <h1><FaSquareInstagram style={{ color: "beige" }} /></h1>
+          <a href="" style={{ color: "beige" }}><h3>RainBow Tattoo</h3></a>
+        </div>
+        <div className='m-5 gap-5' style={{ display: "flex", alignItems: "center"}}>
+          <h1><FaXTwitter style={{ color: "beige" }} /></h1>
+          <a href="" style={{ color: "beige" }}><h3>RainBow Tattoo</h3></a>
+        </div>
+      </Col>
+    </Row>      
   )
 }

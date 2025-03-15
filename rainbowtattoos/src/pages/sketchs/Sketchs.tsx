@@ -11,7 +11,7 @@ const sketchsList: ImagesProps['imagesList'] = [
 
 export function Sketchs(){
     const imgType: string = "Croquis";
-    const color: string = "white";
+    const color: string = "beige";
     return (
         <div>
             <ImageListing imagesList={sketchsList} imgType={imgType} txtColor={color} />

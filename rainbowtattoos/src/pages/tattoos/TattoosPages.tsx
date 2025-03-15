@@ -3,12 +3,11 @@ import { PageTemplate } from '../../PageTemplate';
 
 export function TattoosPage() {
   return (
-    <PageTemplate 
-      title="Tattoos réalisés" 
+    <PageTemplate  
       previous="/pages/sketchs" 
       nextPage="/pages/links" 
       bgImageClass="bg-tattoo"
-      txtColor='white'
+      txtColor='beige'
     >
       {<Tattoos />}
     </PageTemplate>

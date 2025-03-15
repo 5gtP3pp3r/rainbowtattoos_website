@@ -6,7 +6,6 @@ import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md"; /*<MdOutline
 import { MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";  /*<MdOutlineKeyboardDoubleArrowLeft />*/
 
 interface PageTemplateProps {
-  title: string;
   children: React.ReactNode;
   previous: string;
   nextPage: string;
@@ -14,7 +13,7 @@ interface PageTemplateProps {
   txtColor: string
 }
 
-export function PageTemplate({ title, children, previous, nextPage, bgImageClass, txtColor }: PageTemplateProps) {
+export function PageTemplate({ children, previous, nextPage, bgImageClass, txtColor }: PageTemplateProps) {
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -26,20 +25,18 @@ export function PageTemplate({ title, children, previous, nextPage, bgImageClass
   }, [bgImageClass]);
 
   return (
-    <div >
-      <h1 style={{ color: txtColor }}>{title}</h1>
+    <>
       <div style={{minHeight: '285px'}}>{children}</div>
       <div className="d-flex justify-content-center gap-5 mt-5 mb-5">        
-            <h1>
+            <h1 className='me-5'>
               <MdOutlineKeyboardDoubleArrowLeft
                 onClick={() => navigate(previous)}   
                 onMouseOver={(e) => e.currentTarget.style.cursor = 'pointer'}            
                 style={{width:50}}
                 color={txtColor}
               />
-            </h1>
-            <h4 style={{ color: txtColor }}>Pages</h4>
-            <h1>
+            </h1>            
+            <h1 className='ms-5'>
               <MdOutlineKeyboardDoubleArrowRight
                 onClick={() => navigate(nextPage)}   
                 onMouseOver={(e) => e.currentTarget.style.cursor = 'pointer'}            
@@ -48,6 +45,6 @@ export function PageTemplate({ title, children, previous, nextPage, bgImageClass
               />
             </h1>               
       </div>
-    </div>
+    </>
   );
 }

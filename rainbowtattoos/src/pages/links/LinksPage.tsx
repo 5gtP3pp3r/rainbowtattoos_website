@@ -4,11 +4,10 @@ import { PageTemplate } from '../../PageTemplate';
 export function LinksPage() {
   return (
     <PageTemplate 
-      title="Nous rejoindres" 
-      previous="/pages/tattoos" 
+      previous="/pages/sketchs" 
       nextPage="/" 
       bgImageClass="bg-link"
-      txtColor="red"
+      txtColor="beige"
     >
       {<Links />}
     </PageTemplate>

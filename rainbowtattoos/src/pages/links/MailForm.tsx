@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Form, Button, InputGroup } from "react-bootstrap";
 import { useState } from "react";
-import { Row, Col }from 'react-bootstrap';
+//import { Row, Col }from 'react-bootstrap';
 
 import { AlertFieldValidation } from './AlertValidation';
 import { CheckIcons } from "./CheckIcons";
@@ -57,15 +57,15 @@ export function MailForm() {
             name="contact"
             method="POST"
             data-netlify="true"
+            className='m-5'
         >
         <input type="hidden" name="form-name" value="contact" />
-            <Row>                
-                <Col sm={12} xl={6}>
-                    <div className='mt-5' style={{ height:'110px'}}>
+            
+                    <div className='mt-5 ms-5' style={{ height:'105px'}}>
                         <Form.Label>
-                            <h5 style={{ color: "red" }}>Prénom</h5>
+                            <h5 style={{ color: "beige" }}>Prénom</h5>
                         </Form.Label>
-                        <InputGroup style={{ width: "250px" }}>
+                        <InputGroup style={{ width: "300px" }}>
                             <Form.Control
                                 type="text"
                                 value={formValue.firstName}
@@ -86,13 +86,13 @@ export function MailForm() {
                             />
                         </div>
                     </div>
-                </Col>
-                <Col sm={12} xl={6}>
-                    <div className='mt-5' style={{ height:'110px'}}>
+                
+                
+                    <div className='mt-5 ms-5 me-5' style={{ height:'105px'}}>
                         <Form.Label>
-                            <h5 style={{ color: "red" }}>Nom</h5>
+                            <h5 style={{ color: "beige" }}>Nom</h5>
                         </Form.Label>
-                        <InputGroup style={{ width: "250px" }}>
+                        <InputGroup style={{ width: "300px" }}>
                             <Form.Control
                                 type="text"
                                 value={formValue.lastName}
@@ -112,13 +112,12 @@ export function MailForm() {
                             />
                         </div>
                     </div>
-                </Col>                       
-            </Row>
-            <div className='mt-5' style={{ height:'110px'}}>
+                
+            <div className='mt-5 ms-5' style={{ height:'105px'}}>
                 <Form.Label>
-                    <h5 style={{ color: "red" }}>Courriel</h5>
+                    <h5 style={{ color: "beige" }}>Courriel</h5>
                 </Form.Label>
-                <InputGroup style={{ width: "300px" }}>
+                <InputGroup style={{ width: "450px" }}>
                     <Form.Control
                         type="text"
                         value={formValue.email}
@@ -138,15 +137,15 @@ export function MailForm() {
                     />
                 </div>
             </div>
-            <div className='mt-5' style={{ height:'200px'}}>
+            <div className='mt-5 ms-5' style={{ height:'300px'}}>
                 <Form.Group controlId="message">
                     <Form.Label>
-                        <h5 style={{ color: "red" }}>Message</h5>
+                        <h5 style={{ color: "beige" }}>Message</h5>
                     </Form.Label>
-                    <InputGroup style={{ width: "600px" }}>
+                    <InputGroup style={{ width: "800px" }}>
                     <Form.Control 
                         as="textarea" 
-                        rows={5} 
+                        rows={8} 
                         value={formValue.textarea}
                         onChange={handleChange("textarea")}
                         placeholder="Écrivez votre message ici..." 
