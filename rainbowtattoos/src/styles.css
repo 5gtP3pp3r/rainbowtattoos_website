@@ -8,16 +8,16 @@ body {
     background-attachment: fixed;
 }
 body.bg-home {
-    background-image: url("./images/sketch_1.jpg");
+    background-image: url("./images/Acceuil_BG.png");
 }
 body.bg-sketch {
-    background-image: url("./images/sketch_bg.png");
+    background-image: url("./images/Portfolio_BG.png");
 }
 body.bg-tattoo {
     background-image: url("./images/cat_banner.jpg");
 }
 body.bg-link {
-    background-image: url("./images/flash_flowers.png");
+    background-image: url("./images/Contacter_BG.png");
 }
 
 .img-blur-border {

@@ -13,10 +13,10 @@ export function NavBarre() {
         <Navbar expand={expand} className="mb-3">
           <Container fluid style={{ paddingLeft: '100px', paddingRight: '100px' }}>            
               <Navbar.Brand href="/">
-                <img src="./images/bunny_guy.png" 
+                <img src="./images/Logo_PNG.png" 
                      alt="bunny_guy" 
-                     width={150} 
-                     className="img-blur-border"
+                     //width={150} 
+                     //className="img-blur-border"
                 />
               </Navbar.Brand>                         
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} style={{ backgroundColor:'grey' }} />
