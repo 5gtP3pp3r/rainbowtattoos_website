@@ -60,120 +60,123 @@ export function MailForm(): JSX.Element {
             method="POST"
             data-netlify="true"
             className='m-5'
+            
         >
         <input type="hidden" name="form-name" value="contact" />
             
-        <div className='mt-5' style={{ height:'80px'}}>
-            <Form.Label>
-                <h5 style={{ color: "beige" }}>Prénom</h5>
-            </Form.Label>
-            <InputGroup style={{ maxWidth: "300px" }}>
-                <Form.Control
-                    type="text"
-                    value={formValue.firstName}
-                    onChange={handleChange("firstName")}
-                    placeholder="Jane"
-                    style={{ outline: "none", boxShadow: "none" }}
-                    autoFocus
-                />
-                <InputGroup.Text>
-                    <CheckIcons isTrue={isFieldValide("firstName")} />
-                </InputGroup.Text>
-            </InputGroup>
-            <div className='mt-1'>
-                <AlertFieldValidation
-                    value={formValue.firstName}
-                    regex={regexPatterns.firstName}
-                    text={validationMessages.firstName}
-                />
-            </div>
-        </div>                               
-        <div className='mt-5' style={{ height:'80px'}}>
-            <Form.Label>
-                <h5 style={{ color: "beige" }}>Nom</h5>
-            </Form.Label>
-            <InputGroup style={{ maxWidth: "300px" }}>
-                <Form.Control
-                    type="text"
-                    value={formValue.lastName}
-                    onChange={handleChange("lastName")}
-                    placeholder="Doe"
-                    style={{ outline: "none", boxShadow: "none" }}
-                />
-                <InputGroup.Text>
-                    <CheckIcons isTrue={isFieldValide("lastName")} />
-                </InputGroup.Text>
-            </InputGroup>
-            <div className='mt-1'>
-                <AlertFieldValidation
-                    value={formValue.lastName}
-                    regex={regexPatterns.lastName}
-                    text={validationMessages.lastName}
-                />
-            </div>
-        </div>               
-        <div className='mt-5' style={{ height:'80px'}}>
-            <Form.Label>
-                <h5 style={{ color: "beige" }}>Courriel</h5>
-            </Form.Label>
-            <InputGroup style={{ maxWidth: "450px" }}>
-                <Form.Control
-                    type="text"
-                    value={formValue.email}
-                    onChange={handleChange("email")}
-                    placeholder="exemple@service.domaine"
-                    style={{ outline: "none", boxShadow: "none" }}
-                />
-                <InputGroup.Text>
-                    <CheckIcons isTrue={isFieldValide("email")} />
-                </InputGroup.Text>
-             </InputGroup>
-            <div className='mt-1'>
-                <AlertFieldValidation
-                    value={formValue.email}
-                    regex={regexPatterns.email}
-                    text={validationMessages.email}
-                />
-            </div>
-        </div>
-        <div className='mt-5' style={{ height:'300px'}}>
-            <Form.Group controlId="message">
+            <div className='mt-5' style={{ height:'80px'}}>
                 <Form.Label>
-                    <h5 style={{ color: "beige" }}>Message</h5>
+                    <h5 style={{ color: "beige" }}>Prénom</h5>
                 </Form.Label>
-                <InputGroup style={{ maxWidth: "800px" }}>
-                <Form.Control 
-                    as="textarea" 
-                    rows={8} 
-                    value={formValue.textarea}
-                    onChange={handleChange("textarea")}
-                    placeholder="Écrivez votre message ici..." 
-                    style={{ outline: "none", boxShadow: "none" }} 
-                />
-                <InputGroup.Text>
-                    <CheckIcons isTrue={IsTextareaFilded("textarea")} />
-                </InputGroup.Text>
+                <InputGroup style={{ maxWidth: "300px" }}>
+                    <Form.Control
+                        type="text"
+                        value={formValue.firstName}
+                        onChange={handleChange("firstName")}
+                        placeholder="Jane"
+                        className='custom-input'
+                        autoFocus
+                    />
+                    <InputGroup.Text className='custom-input'>
+                        <CheckIcons isTrue={isFieldValide("firstName")} />
+                    </InputGroup.Text>
                 </InputGroup>
                 <div className='mt-1'>
                     <AlertFieldValidation
-                        value={formValue.textarea}
-                        regex={regexPatterns.textarea}
-                        text={validationMessages.textarea}
+                        value={formValue.firstName}
+                        regex={regexPatterns.firstName}
+                        text={validationMessages.firstName}
                     />
                 </div>
-            </Form.Group>
-            </div>            
-                { allFieldsValide && (
-                    <div className='d-flex justify-content-center'> 
-                        <Button 
-                            type="submit" 
-                            variant="success"
-                            style={{height:75, maxWidth:300}}
-                        >                            
-                            <h4>M'envoyer le courriel</h4>
-                        </Button>
+            </div>                               
+            <div className='mt-5' style={{ height:'80px'}}>
+                <Form.Label>
+                    <h5 style={{ color: "beige" }}>Nom</h5>
+                </Form.Label>
+                <InputGroup style={{ maxWidth: "300px" }}>
+                    <Form.Control
+                        type="text"
+                        value={formValue.lastName}
+                        onChange={handleChange("lastName")}
+                        placeholder="Doe"
+                        className='custom-input'
+                    />
+                    <InputGroup.Text className='custom-input'>
+                        <CheckIcons isTrue={isFieldValide("lastName")} />
+                    </InputGroup.Text>
+                </InputGroup>
+                <div className='mt-1'>
+                    <AlertFieldValidation
+                        value={formValue.lastName}
+                        regex={regexPatterns.lastName}
+                        text={validationMessages.lastName}
+                    />
+                </div>
+            </div>               
+            <div className='mt-5' style={{ height:'80px'}}>
+                <Form.Label>
+                    <h5 style={{ color: "beige" }}>Courriel</h5>
+                </Form.Label>
+                <InputGroup style={{ maxWidth: "450px" }}>
+                    <Form.Control
+                        type="text"
+                        value={formValue.email}
+                        onChange={handleChange("email")}
+                        placeholder="exemple@service.domaine"
+                        className='custom-input'
+                    />
+                    <InputGroup.Text className='custom-input'>
+                        <CheckIcons isTrue={isFieldValide("email")} />
+                    </InputGroup.Text>
+                </InputGroup>
+                <div className='mt-1'>
+                    <AlertFieldValidation
+                        value={formValue.email}
+                        regex={regexPatterns.email}
+                        text={validationMessages.email}
+                    />
+                </div>
+            </div>
+            <div className='mt-5' style={{ height:'300px'}}>
+                <Form.Group controlId="message">
+                    <Form.Label>
+                        <h5 style={{ color: "beige" }}>Message</h5>
+                    </Form.Label>
+                    <InputGroup style={{ maxWidth: "500px" }}>
+                    <Form.Control 
+                        as="textarea" 
+                        rows={8} 
+                        value={formValue.textarea}
+                        onChange={handleChange("textarea")}
+                        placeholder="Écrivez votre message ici..." 
+                        className='custom-input'
+                    />
+                    <InputGroup.Text className='custom-input'>
+                        <CheckIcons isTrue={IsTextareaFilded("textarea")} />
+                    </InputGroup.Text>
+                    </InputGroup>
+                    <div className='mt-1'>
+                        <AlertFieldValidation
+                            value={formValue.textarea}
+                            regex={regexPatterns.textarea}
+                            text={validationMessages.textarea}
+                        />                        
                     </div>
-                )}                         
+                    <div className='mt-3'style={{maxWidth:500}}>
+                        { allFieldsValide && (
+                            <div className='d-flex justify-content-center'> 
+                                <Button 
+                                    type="submit" 
+                                    variant="success"
+                                    style={{height:50, maxWidth:250}}
+                                >                            
+                                    <h5>M'envoyer le courriel</h5>
+                                </Button>
+                            </div>
+                        )}  
+                    </div>
+                </Form.Group>
+            </div>                                                   
         </Form>
     )
 }

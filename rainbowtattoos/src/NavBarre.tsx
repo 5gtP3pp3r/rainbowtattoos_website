@@ -9,10 +9,10 @@ export function NavBarre(): JSX.Element {
         <Navbar collapseOnSelect expand="lg" className="navbar-container">   
             <div >
               <NavLink to="/">          
-                  <img src="./images/Logo_PNG.png" alt="Logo" className="navbar-left img-resize mb-5"/>          
+                  <img src="./images/style/Logo_PNG.png" alt="Logo" className="navbar-left img-resize mb-5"/>          
               </NavLink> 
             </div> 
-            <Nav className="navbar-links mb-5">
+            <Nav className="navbar-links">
               <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>Acceuil</NavLink>
               <NavLink to="/pages/portfolio" className={({ isActive }) => isActive ? "active" : ""}>Portfolio</NavLink>
               <NavLink to="/pages/contacts" className={({ isActive }) => isActive ? "active" : ""}>Contacter</NavLink>       

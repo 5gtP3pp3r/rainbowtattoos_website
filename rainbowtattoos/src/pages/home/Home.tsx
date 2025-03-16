@@ -4,7 +4,7 @@ import { Container,  Col, Row } from 'react-bootstrap';
 export function Home(): JSX.Element {
     return (      
         <Container fluid >            
-            <Row className='g-5 mt-5'>         
+            <Row className='g-5 mt-5 mx-0'>         
                 <Col lg={12} xl={6}> 
                     <div className='mt-5 ms-5'>    
                         <strong><p style={{ color: 'beige', fontSize: '25px' }}>
@@ -18,12 +18,12 @@ export function Home(): JSX.Element {
                     </div>      
                 </Col>                    
                 <Col lg={12} xl={6}>  
-                    <Row className='mb-5'>  
-                        <Col lg={12} xl={6} className='d-flex justify-content-center mt-5'> 
-                            <img src="../images/flash_flowers.png" alt="" width={300} className="img-blur-border"/>
+                    <Row className='mb-5' >  
+                        <Col lg={12} xl={6} className='d-flex justify-content-center mx-0 mt-5'> 
+                            <img src="../images/portfolio/flash_flowers.png" alt="" width={300} className="img-blur-border"/>
                         </Col>
-                        <Col lg={12} xl={6} className='d-flex justify-content-center mt-5'>
-                            <img src="../images/cat_banner.jpg" alt="" width={300} className="img-blur-border"/>
+                        <Col lg={12} xl={6} className='d-flex justify-content-center mx-0 mt-5'>
+                            <img src="../images/portfolio/cat_banner.jpg" alt="" width={300} className="img-blur-border"/>
                         </Col> 
                     </Row>                                  
                 </Col> 

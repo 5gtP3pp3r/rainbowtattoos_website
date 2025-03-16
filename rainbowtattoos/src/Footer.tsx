@@ -12,15 +12,15 @@ export function Footer(): JSX.Element {
     //const navigate = useNavigate();
 
     return (
-        <div style={{minHeight:'200px'}}className="d-flex justify-content-center mb-1 footer-fond"/*fixed-bottom*/>    
+        <div style={{minHeight:'150px'}} className="mb-1 footer-fond"/*fixed-bottom*/>    
             <Container>
-                <Row>
+                <Row className='d-flex align-items-end'>
                     <Col className='d-flex justify-content-center' md={4}> 
-                    <div className='mt-5'>
+                    <div className='mt-2'>
                         <p style={{color: "beige"}}>
-                            Théo Tattoo: Salon de piercing et tatouage<br/>
+                            Théo Tattoo: Piercing et tatouage<br/>
                             414 rue Principale , suite 201<br/>
-                            Vallée-Jonction,Québec
+                            Vallée-Jonction, Québec
                         </p>
                         <div className='gap-2' style={{ display: "flex", alignItems: "center"}}>
                             <h4><FaFacebookSquare style={{ color: "beige" }} /></h4>
@@ -30,25 +30,26 @@ export function Footer(): JSX.Element {
                     </div>
                     </Col>
                     <Col className='d-flex justify-content-center' md={4}>
-                        <div className='mt-5'>
+                        <div className='mt-2'>
                             <p style={{color: "beige"}}>
                                 Création du site<br/>
-                                William Crépault <img src="./images/Wc.png" alt="WC" width={12}/><br/>
+                                William Crépault <img src="./images/style/Wc.png" alt="WC" width={12} /><br/>
                                 2025
                             </p>
                             
                         </div>
                     </Col>
                     <Col className='d-flex justify-content-center' md={4}>
-                        <div className='mt-5'>
+                        <div className='mt-2'>
                             <p style={{color: "beige"}}>
+                                RainBow Tattoo<br/>
                                 Kyle Marchand, artiste tatoueur<br/>
                                 Studio Théo Tattoo<br/>                                
                             </p>
                             <div className='gap-2' style={{ display: "flex", alignItems: "center"}}>
                                 <h4><FaSquareInstagram style={{ color: "beige" }} /></h4>
-                                <a href=""
-                                   style={{ color: "beige" }}>RainBow Tattoo</a>
+                                <a href="https://www.instagram.com/_rainbowtattoos_/"
+                                   style={{ color: "beige" }}>Rainbow Tattoos</a>
                             </div>
                         </div>
                     </Col>

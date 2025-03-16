@@ -17,8 +17,8 @@ export function AlertFieldValidation({ value, regex, text }: ValidationProps): J
                         color: "red",
                         height: "35px",
                         display: "flex",
-                        alignItems: "center",                        
+                        alignItems: "center",                       
                         marginTop: "10px"
                       }}>
-                    <p>{text}</p></Alert> : null;  
+                    <p style={{ margin: 0 }}>{text}</p></Alert> : null;  
 }

@@ -18,16 +18,16 @@ body::before {
     z-index: -1; 
 }
 body.bg-home {
-    background-image: url("./images/Acceuil_BG2.png"); 
+    background-image: url("./images/backGrounds/Acceuil_BG2.png"); 
 }
 body.bg-sketch {
-    background-image: url("./images/Portfolio_BG.png");
+    background-image: url("./images/backGrounds/Portfolio_BG2.png");
 }
 /*body.bg-tattoo {
-    background-image: url("./images/cat_banner.jpg");
+    background-image: url("./images/backGrounds/cat_banner.jpg");
 }*/
 body.bg-link {
-    background-image: url("./images/Contacter_BG.png");
+    background-image: url("./images/backGrounds/Contacter_BG.png");
 }
 
 .navbar-container {
@@ -37,8 +37,7 @@ body.bg-link {
 }
 .navbar-left {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 .img-resize {
     width: 100%; 
@@ -48,7 +47,7 @@ body.bg-link {
     display: flex;
     justify-content: space-around;
     align-items: flex-end; 
-    flex-grow: 1; 
+    flex-grow: 1; min-height: 300px;
 }
 .navbar-links a {
     color: beige;
@@ -68,7 +67,7 @@ body.bg-link {
     left: 0;
     right: 0;
     height: 30px; /* Hauteur ajustée pour mieux voir l'image */
-    background-image: url('./images/underline.png');
+    background-image: url('./images/style/underline.png');
     background-repeat: no-repeat;
     background-size: contain;
     opacity: 0; /* Caché par défaut */
@@ -84,10 +83,18 @@ body.bg-link {
     color: beige !important; 
 }
 
+.custom-input {
+    background-color:rgba(245, 245, 220, 1) !important;
+    border: 1px solid black !important;
+    box-shadow: none !important;
+}
+.custom-input::placeholder {
+    color: rgba(138, 135, 108, 0.7) !important; /* Couleur du placeholder */
+}
 .img-blur-border {
     position: relative;
     border-radius: 25px; 
-    box-shadow: 0 0 40px rgba(0, 0, 0, 50);
+    box-shadow: 0 0 60px rgba(0, 0, 0, 1);
 }
 
 .footer-fond {

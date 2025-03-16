@@ -7,7 +7,7 @@ import { MailForm } from './MailForm';
 
 export function Contacts(): JSX.Element {
   return (
-    <Row>
+    <Row className='mx-0'>
       <Col lg={12} xl={7}>
         <div className='m-5' >
           <strong><p className='m-2 pb-5' style={{ color: 'beige', fontSize: '25px' }}>
@@ -20,23 +20,23 @@ export function Contacts(): JSX.Element {
       </Col>        
       <Col lg={12} xl={5} className='d-flex justify-content-center mt-5'>
         <div>
-          <div className='pb-5'>
+          <div className='pb-5 ms-3'>
             <strong><p style={{ color: 'beige', fontSize: '25px' }}>
               Venez nous visiter sur les réseaux sociaux!
             </p></strong>
           </div>
-          <div className='m-5 gap-5' style={{ display: "flex", alignItems: "center"}}>
+          <div className='m-5 gap-5 ps-4' style={{ display: "flex", alignItems: "center"}}>
             <h1><FaFacebookSquare style={{ color: "beige" }} /></h1>
             <a href="https://www.facebook.com/search/top?q=th%C3%A9o%20tattoo" 
               style={{ color: "beige" }}><h3>Studio Théo Tattoo</h3></a>
           </div>
-          <div className='m-5 gap-5' style={{ display: "flex", alignItems: "center"}}>
+          <div className='m-5 gap-5 ps-4' style={{ display: "flex", alignItems: "center"}}>
             <h1><FaSquareInstagram style={{ color: "beige" }} /></h1>
-            <a href="" style={{ color: "beige" }}><h3>RainBow Tattoo</h3></a>
+            <a href="https://www.instagram.com/_rainbowtattoos_/" style={{ color: "beige" }}><h3>RainBow Tattoo</h3></a>
           </div>
-          <div className='m-5 gap-5' style={{ display: "flex", alignItems: "center"}}>
+          <div className='m-5 gap-5 ps-4' style={{ display: "flex", alignItems: "center"}}>
             <h1><FaXTwitter style={{ color: "beige" }} /></h1>
-            <a href="" style={{ color: "beige" }}><h3>RainBow Tattoo</h3></a>
+            <a href="" style={{ color: "beige" }}><h3>Rainbow Tattoos</h3></a>
           </div>
         </div>
       </Col>
