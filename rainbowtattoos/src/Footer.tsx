@@ -19,7 +19,7 @@ export function Footer(): JSX.Element {
                     <div className='mt-2'>
                         <p style={{color: "beige"}}>
                             Théo Tattoo: Piercing et tatouage<br/>
-                            414 rue Principale , suite 201<br/>
+                            414 rue Principale, suite 201<br/>
                             Vallée-Jonction, Québec
                         </p>
                         <div className='gap-2' style={{ display: "flex", alignItems: "center"}}>

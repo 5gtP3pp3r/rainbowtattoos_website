@@ -45,7 +45,7 @@ body.bg-link {
 }
 .navbar-links {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-end; 
     flex-grow: 1; min-height: 300px;
 }
