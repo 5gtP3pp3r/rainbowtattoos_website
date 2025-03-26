@@ -6,4 +6,5 @@ interface image {
 export interface ImagesProps {
     imagesList: image[]; 
     txtColor: string;
+    imgPath: string;
 }

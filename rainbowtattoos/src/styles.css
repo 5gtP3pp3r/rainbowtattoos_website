@@ -83,6 +83,11 @@ body.bg-link {
     color: beige !important; 
 }
 
+.main-text {
+    font-size: 17px;
+    color: beige;
+}
+
 .custom-input {
     background-color:rgba(245, 245, 220, 1) !important;
     border: 1px solid black !important;

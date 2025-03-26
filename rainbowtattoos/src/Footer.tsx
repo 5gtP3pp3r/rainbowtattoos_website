@@ -49,7 +49,7 @@ export function Footer(): JSX.Element {
                             <div className='gap-2' style={{ display: "flex", alignItems: "center"}}>
                                 <h4><FaSquareInstagram style={{ color: "beige" }} /></h4>
                                 <a href="https://www.instagram.com/_rainbowtattoos_/"
-                                   style={{ color: "beige" }}>Rainbow Tattoos</a>
+                                   style={{ color: "beige" }}>Rainbow Tattoo</a>
                             </div>
                         </div>
                     </Col>
