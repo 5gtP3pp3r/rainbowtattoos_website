@@ -64,9 +64,9 @@ export function MailForm(): JSX.Element {
         >
         <input type="hidden" name="form-name" value="contact" />
             
-            <div className='mt-5' style={{ height:'80px'}}>
+            <div className='mt-5' style={{ height:'75px'}}>
                 <Form.Label>
-                    <h5 style={{ color: "beige" }}>Prénom</h5>
+                    <h6 style={{ color: "beige" }}>Prénom</h6>
                 </Form.Label>
                 <InputGroup style={{ maxWidth: "300px" }}>
                     <Form.Control
@@ -89,9 +89,9 @@ export function MailForm(): JSX.Element {
                     />
                 </div>
             </div>                               
-            <div className='mt-5' style={{ height:'80px'}}>
+            <div className='mt-5' style={{ height:'75px'}}>
                 <Form.Label>
-                    <h5 style={{ color: "beige" }}>Nom</h5>
+                    <h6 style={{ color: "beige" }}>Nom</h6>
                 </Form.Label>
                 <InputGroup style={{ maxWidth: "300px" }}>
                     <Form.Control
@@ -113,11 +113,11 @@ export function MailForm(): JSX.Element {
                     />
                 </div>
             </div>               
-            <div className='mt-5' style={{ height:'80px'}}>
+            <div className='mt-5' style={{ height:'75px'}}>
                 <Form.Label>
-                    <h5 style={{ color: "beige" }}>Courriel</h5>
+                    <h6 style={{ color: "beige" }}>Courriel</h6>
                 </Form.Label>
-                <InputGroup style={{ maxWidth: "450px" }}>
+                <InputGroup style={{ maxWidth: "500px" }}>
                     <Form.Control
                         type="text"
                         value={formValue.email}
@@ -140,7 +140,7 @@ export function MailForm(): JSX.Element {
             <div className='mt-5' style={{ height:'300px'}}>
                 <Form.Group controlId="message">
                     <Form.Label>
-                        <h5 style={{ color: "beige" }}>Message</h5>
+                        <h6 style={{ color: "beige" }}>Message</h6>
                     </Form.Label>
                     <InputGroup style={{ maxWidth: "500px" }}>
                     <Form.Control 
@@ -170,7 +170,7 @@ export function MailForm(): JSX.Element {
                                     variant="success"
                                     style={{height:50, maxWidth:250}}
                                 >                            
-                                    <h5>M'envoyer le courriel</h5>
+                                    <h6>M'envoyer le courriel</h6>
                                 </Button>
                             </div>
                         )}  

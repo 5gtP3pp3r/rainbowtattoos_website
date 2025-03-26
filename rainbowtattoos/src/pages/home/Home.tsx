@@ -6,15 +6,15 @@ export function Home(): JSX.Element {
         <Container fluid >            
             <Row className='g-5 mt-5 mx-0'>         
                 <Col lg={12} xl={6}> 
-                    <div className='mt-5 ms-5'>    
-                        <strong><p style={{ color: 'beige', fontSize: '25px' }}>
+                    <div className='mt-5 ms-3'>    
+                        <p style={{ color: 'beige', fontSize: '17px' }}>
                             BlabLaBla texte pour présenter Kyle et son coin perso dans le studio 
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
                             Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  
                             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
-                        </p></strong>
+                        </p>
                     </div>      
                 </Col>                    
                 <Col lg={12} xl={6}>  
