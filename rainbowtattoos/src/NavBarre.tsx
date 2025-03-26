@@ -13,7 +13,7 @@ export function NavBarre(): JSX.Element {
               </NavLink> 
             </div> 
             <Nav className="navbar-links">
-              <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>Acceuil</NavLink>
+              <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>Accueil</NavLink>
               <NavLink to="/pages/portfolio" className={({ isActive }) => isActive ? "active" : ""}>Portfolio</NavLink>
               <NavLink to="/pages/contacts" className={({ isActive }) => isActive ? "active" : ""}>Contacter</NavLink>       
             </Nav>
