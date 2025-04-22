@@ -170,7 +170,7 @@ export function MailForm(): JSX.Element {
                                     variant="success"
                                     style={{height:50, maxWidth:250}}
                                 >                            
-                                    <h6>M'envoyer le courriel</h6>
+                                    <h5>M'envoyer le courriel</h5>
                                 </Button>
                             </div>
                         )}  
