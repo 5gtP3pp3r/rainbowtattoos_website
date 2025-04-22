@@ -7,7 +7,7 @@ import { ImagesProps } from '../../ImagesList/ImagesProps';
 
 export function Portfolio(): JSX.Element {
     const [imagesList, setImagesList] = useState<ImagesProps["imagesList"]>([]);
-    const color: string = "beige";
+    //const color: string = "beige";
 
     useEffect(() => {
         fetch("/jsons/portfolio.json")
@@ -16,5 +16,5 @@ export function Portfolio(): JSX.Element {
             .catch((error) => console.error("Erreur de chargement:", error));
     }, []);
 
-    return <ImageListing imagesList={imagesList} txtColor={color} imgPath="../images/portfolio/" />;
+    return <ImageListing imagesList={imagesList} /*txtColor={color}*/ imgPath="../images/portfolio/" />;
 }

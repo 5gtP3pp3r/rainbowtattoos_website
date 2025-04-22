@@ -85,8 +85,25 @@ body.bg-link {
 
 .main-text {
     font-size: 17px;
-    color: beige;
+    color: beige !important;
 }
+@media screen and (min-width: 768px) {
+    .main-text {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .main-text {
+        font-size: 22px;
+    }
+}
+.footer-text, h6, a {
+    color: beige !important;
+}
+.footer-text {
+    font-size: 14px;
+}
+
 
 .custom-input {
     background-color:rgba(245, 245, 220, 1) !important;

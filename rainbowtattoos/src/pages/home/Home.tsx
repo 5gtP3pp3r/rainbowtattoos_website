@@ -1,13 +1,42 @@
 import { JSX } from 'react';
 import { Container,  Col, Row } from 'react-bootstrap';
+import { useEffect, useState } from "react";
+import { ImageListing } from '../../ImagesList/ImagesListing';  
+import { ImagesProps } from '../../ImagesList/ImagesProps';
 
 export function Home(): JSX.Element {
+    const [imagesList, setImagesList] = useState<ImagesProps["imagesList"]>([]);
+
+    useEffect(() => {
+        fetch("/jsons/promotion.json")
+            .then((response) => response.json())
+            .then((data) => {
+                if (Array.isArray(data) && data.length > 0) {
+                    setImagesList(data);
+                } else {
+                    console.log("Aucune promo cette semaine.");
+                }
+            })
+            .catch((error) => console.error("Erreur de chargement:", error));
+    }, []);
+
     return (      
         <Container fluid >            
             <Row className='g-5 mt-5 mx-0'>         
                 <Col lg={12} xl={6}> 
-                    <div className='mt-5 ms-3'>    
-                        <p style={{ color: 'beige', fontSize: '17px' }}>
+
+                    {imagesList.length > 0 ? (
+                        <div className='ms-3'>
+                            <ImageListing imagesList={imagesList} imgPath="../images/imagesPromo/" />
+                        </div>
+                    ) : (
+                        <div className='ms-3'>
+                            <p className='main-text'>Pas de promotions pour l’instant.</p>
+                        </div>
+                    )}
+
+                    <div className='ms-3'>    
+                        <p className='main-text'>
                             BlabLaBla texte pour présenter Kyle et son coin perso dans le studio 
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
                             Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  

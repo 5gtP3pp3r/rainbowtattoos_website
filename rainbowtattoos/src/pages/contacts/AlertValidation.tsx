@@ -13,12 +13,12 @@ export function AlertFieldValidation({ value, regex, text }: ValidationProps): J
   return !isValid ? <Alert 
                       variant="warning" 
                       style={{ 
-                        width: "300px", 
+                        maxWidth: "235px", 
                         color: "red",
                         height: "35px",
                         display: "flex",
                         alignItems: "center",                       
                         marginTop: "10px"
                       }}>
-                    <p style={{ margin: 0 }}>{text}</p></Alert> : null;  
+                    <p style={{ margin: 0}}>{text}</p></Alert> : null;  
 }

@@ -8,14 +8,14 @@ import { CheckIcons } from "./CheckIcons";
 
 
 const regexPatterns: { [key: string]: RegExp } = {
-    firstName: /^[A-Z].{2,}$/,
-    lastName: /^[A-Z].{2,}$/,
+    firstName: /^[a-z].{2,}$/,
+    lastName: /^[a-z].{2,}$/,
     email: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
     textarea: /^[a-zA-Z0-9.].{10,}$/
 };
 const validationMessages: { [key: string]: string } = {
-    firstName: "Majuscule et au moins 3 caractères",
-    lastName: "Majuscule et au moins 3 caractères",
+    firstName: "Au moins 3 caractères",
+    lastName: "Au moins 3 caractères",
     email: "Utilisez un courriel valide",
     textarea: "SVP, au moins dix caractères"
 };
@@ -66,7 +66,7 @@ export function MailForm(): JSX.Element {
             
             <div className='mt-5' style={{ height:'75px'}}>
                 <Form.Label>
-                    <h6 style={{ color: "beige" }}>Prénom</h6>
+                    <h5 style={{ color: "beige" }}>Prénom</h5>
                 </Form.Label>
                 <InputGroup style={{ maxWidth: "300px" }}>
                     <Form.Control
@@ -91,7 +91,7 @@ export function MailForm(): JSX.Element {
             </div>                               
             <div className='mt-5' style={{ height:'75px'}}>
                 <Form.Label>
-                    <h6 style={{ color: "beige" }}>Nom</h6>
+                    <h5 style={{ color: "beige" }}>Nom</h5>
                 </Form.Label>
                 <InputGroup style={{ maxWidth: "300px" }}>
                     <Form.Control
@@ -115,7 +115,7 @@ export function MailForm(): JSX.Element {
             </div>               
             <div className='mt-5' style={{ height:'75px'}}>
                 <Form.Label>
-                    <h6 style={{ color: "beige" }}>Courriel</h6>
+                    <h5 style={{ color: "beige" }}>Courriel</h5>
                 </Form.Label>
                 <InputGroup style={{ maxWidth: "500px" }}>
                     <Form.Control
@@ -140,7 +140,7 @@ export function MailForm(): JSX.Element {
             <div className='mt-5' style={{ height:'300px'}}>
                 <Form.Group controlId="message">
                     <Form.Label>
-                        <h6 style={{ color: "beige" }}>Message</h6>
+                        <h5 style={{ color: "beige" }}>Message</h5>
                     </Form.Label>
                     <InputGroup style={{ maxWidth: "500px" }}>
                     <Form.Control 
