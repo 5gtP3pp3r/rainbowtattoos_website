@@ -3,13 +3,8 @@ import { JSX } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
-// import ButtonGroup from 'react-bootstrap/ButtonGroup';
-// import { Button } from 'react-bootstrap';
-// import { useNavigate } from 'react-router';
-
 
 export function Footer(): JSX.Element {
-    //const navigate = useNavigate();
 
     return (
         <div style={{minHeight:'150px'}} className="mb-1 footer-fond"/*fixed-bottom*/>    
