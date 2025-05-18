@@ -97,6 +97,11 @@ body.bg-link {
         font-size: 22px;
     }
 }
+.promo { 
+    font-size: 30px;
+    color: beige !important;
+}
+
 .footer-text, h6, a {
     color: beige !important;
 }
