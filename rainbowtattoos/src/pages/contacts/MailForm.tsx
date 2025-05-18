@@ -56,14 +56,18 @@ export function MailForm(): JSX.Element {
     };
     return (
         <Form
-            name="contact"
-            method="POST"
-            data-netlify="true"
+            //name="contact"
+            //method="POST"
+            //data-netlify="true"
             className='m-5'
+            // Utilisation temp de mon mail
+            action="https://formsubmit.co/william.crepault@gmail.com"
+            method="POST"
             
         >
-        <input type="hidden" name="form-name" value="contact" />
+        {/*<input type="hidden" name="form-name" value="contact" />*/}
             
+
             <div className='mt-5' style={{ height:'75px'}}>
                 <Form.Label>
                     <h5 style={{ color: "beige" }}>Prénom</h5>
@@ -71,6 +75,7 @@ export function MailForm(): JSX.Element {
                 <InputGroup style={{ maxWidth: "300px" }}>
                     <Form.Control
                         type="text"
+                        name="firstName"
                         value={formValue.firstName}
                         onChange={handleChange("firstName")}
                         placeholder="Jane"
@@ -96,6 +101,7 @@ export function MailForm(): JSX.Element {
                 <InputGroup style={{ maxWidth: "300px" }}>
                     <Form.Control
                         type="text"
+                        name="laststName"
                         value={formValue.lastName}
                         onChange={handleChange("lastName")}
                         placeholder="Doe"
@@ -120,6 +126,7 @@ export function MailForm(): JSX.Element {
                 <InputGroup style={{ maxWidth: "500px" }}>
                     <Form.Control
                         type="text"
+                        name="email"
                         value={formValue.email}
                         onChange={handleChange("email")}
                         placeholder="exemple@service.domaine"
@@ -145,6 +152,7 @@ export function MailForm(): JSX.Element {
                     <InputGroup style={{ maxWidth: "500px" }}>
                     <Form.Control 
                         as="textarea" 
+                        name="textarea"
                         rows={8} 
                         value={formValue.textarea}
                         onChange={handleChange("textarea")}
