@@ -1,5 +1,5 @@
 import { JSX } from 'react';
-import { Home } from './Home'
+import { Home } from './Home'; 
 import { PageTemplate } from '../../PageTemplate';
 
 export function HomePage(): JSX.Element {
