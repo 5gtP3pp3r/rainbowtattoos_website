@@ -1,9 +1,5 @@
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from 'react-router';
 import "./styles.css";
+import { BrowserRouter, Routes, Route } from 'react-router';
 import { JSX } from 'react';
 import { NavBarre } from './NavBarre';
 import { Footer } from './Footer';
@@ -14,9 +10,6 @@ import { PortfolioPage } from './pages/portfolio/PortfolioPage';
 import { ContactsPage } from './pages/contacts/ContactsPage';
 import { SubmitConfirmPage } from './pages/submitConfirm/SubmitConfirmPage';
 import { Page404Page } from './pages/page404/Page404Page';
-
-
-
 
 export function App(): JSX.Element {
 
