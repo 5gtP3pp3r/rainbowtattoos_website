@@ -24,17 +24,6 @@ export function Home(): JSX.Element {
         <Container fluid >            
             <Row className='g-5 mt-5 mx-0'>         
                 <Col lg={12} xl={6}> 
-
-                    {imagesList.length > 0 ? (
-                        <div className='ms-3'>
-                            <ImageListing imagesList={imagesList} imgPath="../images/imagesPromo/" />
-                        </div>
-                    ) : (
-                        <div className='ms-3'>
-                            <p className='main-text'>Pas de promotions pour l’instant.</p>
-                        </div>
-                    )}
-
                     <div className='ms-3'>    
                         <p className='main-text'>
                             BlabLaBla texte pour présenter Kyle et son coin perso dans le studio 
@@ -44,16 +33,29 @@ export function Home(): JSX.Element {
                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  
                             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
                         </p>
-                    </div>      
+                    </div>     
+                    {imagesList.length > 0 ? (
+                        <div className='ms-3'>
+                            <div>
+                                <p className='promo d-flex justify-content-center mt-5'> Promo du jours!</p>
+                            </div>
+                            
+                            <ImageListing imagesList={imagesList} imgPath="../images/imagesPromo/" />
+                        </div>
+                    ) : (
+                        <div className='ms-3'>
+                            <p className='main-text'>Pas de promotions pour l’instant.</p>
+                        </div>
+                    )} 
                 </Col>                    
                 <Col lg={12} xl={6}>  
                     <Row className='mb-5' >  
-                        <Col lg={12} xl={6} className='d-flex justify-content-center mx-0 mt-5'> 
-                            <img src="../images/portfolio/flash_flowers.png" alt="" width={300} className="img-blur-border"/>
+                        <Col className='d-flex justify-content-center mx-0 mt-3'> 
+                            <img src="../images/style/studio.jpeg" alt="" width={600} height={'auto'} className="img-blur-border"/>
                         </Col>
-                        <Col lg={12} xl={6} className='d-flex justify-content-center mx-0 mt-5'>
-                            <img src="../images/portfolio/cat_banner.jpg" alt="" width={300} className="img-blur-border"/>
-                        </Col> 
+                        {/*<Col lg={12} xl={6} className='d-flex justify-content-center mx-0 mt-5'>
+                            <img src="../images/style/studio2.jpeg" alt="" width={100} height={'auto'} className="img-blur-border"/>
+                        </Col>*/}
                     </Row>                                  
                 </Col> 
             </Row>  
