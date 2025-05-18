@@ -9,6 +9,7 @@ export function Page404Page(): JSX.Element {
       nextPage="/" 
       bgImageClass="bg-home"
       txtColor='beige'
+      isSpecialPage={true}
     >
       {<Page404 />}
     </PageTemplate>

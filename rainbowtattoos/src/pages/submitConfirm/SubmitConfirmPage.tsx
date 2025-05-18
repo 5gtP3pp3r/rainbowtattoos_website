@@ -9,6 +9,7 @@ export function SubmitConfirmPage(): JSX.Element {
       nextPage="/" 
       bgImageClass="bg-link"
       txtColor="beige"
+      isSpecialPage={true}
     >
       {<SubmitConfirm />}
     </PageTemplate>

@@ -1,28 +1,25 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { JSX } from 'react';
 import { useEffect } from 'react';
-import { useNavigate } from 'react-router';
-// import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md"; /*<MdOutlineKeyboardDoubleArrowRight />*/
-// import { MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";  /*<MdOutlineKeyboardDoubleArrowLeft />*/
-// import { MdOutlineKeyboardDoubleArrowUp } from "react-icons/md";    /*<MdOutlineKeyboardDoubleArrowUp />*/
-import { TbArrowBigLeftLines } from "react-icons/tb";   /*<TbArrowBigLeftLines />*/
-import { TbArrowBigRightLines } from "react-icons/tb";  /*<TbArrowBigRightLines />*/
-import { TbArrowBigUpLines } from "react-icons/tb";     /*<TbArrowBigUpLines />*/
-
+import { useNavigate } from 'react-router-dom';
+import { TbArrowBigLeftLines } from "react-icons/tb";   
+import { TbArrowBigRightLines } from "react-icons/tb";  
+import { TbArrowBigUpLines } from "react-icons/tb";     
 
 interface PageTemplateProps {
   children: React.ReactNode;
   previous: string;
   nextPage: string;
   bgImageClass: string;
-  txtColor: string
+  txtColor: string;
+  isSpecialPage?: boolean;
 }
 
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-export function PageTemplate({ children, previous, nextPage, bgImageClass, txtColor }: PageTemplateProps) : JSX.Element {
+export function PageTemplate({ children, previous, nextPage, bgImageClass, txtColor, isSpecialPage }: PageTemplateProps) : JSX.Element {
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -46,7 +43,7 @@ export function PageTemplate({ children, previous, nextPage, bgImageClass, txtCo
             </h2>     
             <h2>
               <TbArrowBigUpLines 
-              onClick={() => scrollToTop()}   
+              onClick={() => isSpecialPage ? navigate('/') : scrollToTop()}   
               onMouseOver={(e) => e.currentTarget.style.cursor = 'pointer'}            
               color={txtColor}
             />              
