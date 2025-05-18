@@ -15,7 +15,9 @@ export function Contacts(): JSX.Element {
             parvenir. Je devrais vous donner une réponse dans les 48 heures.
           </p>
         </div>
+
         <MailForm />
+        
       </Col>        
       <Col lg={12} xl={5} className='mt-5 d-flex justify-content-center'>
         <div>

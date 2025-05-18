@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 
 export function SubmitConfirm(): JSX.Element {
-    
     return (
         <>
             <p> marci</p>
