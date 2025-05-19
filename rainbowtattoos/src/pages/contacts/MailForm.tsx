@@ -8,8 +8,8 @@ import { CheckIcons } from "./CheckIcons";
 
 
 const regexPatterns: { [key: string]: RegExp } = {
-    firstName: /^[a-z].{2,}$/,
-    lastName: /^[a-z].{2,}$/,
+    firstName: /^[a-zA-Z].{2,}$/,
+    lastName: /^[a-zA-Z].{2,}$/,
     email: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
     textarea: /^[a-zA-Z0-9.].{10,}$/
 };
