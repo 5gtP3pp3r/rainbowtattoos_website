@@ -55,16 +55,15 @@ export function MailForm(): JSX.Element {
         );
     };
     return (
-        <Form
-            //name="contact"
-            //method="POST"
-            //data-netlify="true"
-            className='m-5'
-            // Utilisation temp de mon mail
+        <Form           
+            // Utilisation temp de mon mail pour test. Monter une boite mail dédié au site, possiblement rediriger vers mail Kyle  
+            // voir https://formsubmit.co pour obtenir un lien de leur part vers un mail crypté. Donc mail non hard codé et illisible à la source.  
             action="https://formsubmit.co/william.crepault@gmail.com"
             method="POST"
-            
-        >
+            className='m-5'
+        >                                       {/* adresse temp du site en mode dev local */}
+        <input type="hidden" name="_next" value="http://localhost:5173/pages/submitConfirm" />
+        <input type="hidden" name="_captcha" value="false" />
         {/*<input type="hidden" name="form-name" value="contact" />*/}
             
 
