@@ -3,8 +3,6 @@ import { Container,  Col, Row } from 'react-bootstrap';
 import { useEffect, useState } from "react";
 import { ImageListing } from '../../ImagesList/ImagesListing';  
 import { ImagesProps } from '../../ImagesList/ImagesProps';
-// temp test
-import { Link } from 'react-router-dom';
 
 export function Home(): JSX.Element {
     const [imagesList, setImagesList] = useState<ImagesProps["imagesList"]>([]);
@@ -54,8 +52,6 @@ export function Home(): JSX.Element {
                     <Row className='mb-5' >  
                         <Col className='d-flex justify-content-center mx-0 mt-3'> 
                             <img src="../images/style/studio.jpeg" alt="" width={600} height={'auto'} className="img-blur-border"/>
-                            {/* test temp link */}
-                            <Link to="/pages/submitConfirm" >SubmitConfirm</Link>
                         </Col>
                         {/*<Col lg={12} xl={6} className='d-flex justify-content-center mx-0 mt-5'>
                             <img src="../images/style/studio2.jpeg" alt="" width={100} height={'auto'} className="img-blur-border"/>
