@@ -34,10 +34,11 @@ export function Home(): JSX.Element {
                             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
                         </p>
                     </div>     
+                    {/* Promo du jour */}
                     {imagesList.length > 0 ? (
                         <div className='ms-3'>
                             <div>
-                                <p className='promo d-flex justify-content-center mt-5'> Promo du jours!</p>
+                                <p className='promo d-flex justify-content-center mt-5'> Promo du jour!</p>
                             </div>
                             
                             <ImageListing imagesList={imagesList} imgPath="../images/imagesPromo/" />
@@ -47,6 +48,7 @@ export function Home(): JSX.Element {
                             <p className='main-text'>Pas de promotions pour l’instant.</p>
                         </div>
                     )} 
+
                 </Col>                    
                 <Col lg={12} xl={6}>  
                     <Row className='mb-5' >  
