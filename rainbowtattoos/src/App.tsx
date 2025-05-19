@@ -19,11 +19,11 @@ export function App(): JSX.Element {
         <NavBarre />        
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="*" element={<Page404Page />} />
             <Route path="pages/portfolio" element={<PortfolioPage />} />
             {/*<Route path="pages/tattoos" element={<TattoosPage />} />*/}
             <Route path="pages/contacts" element={<ContactsPage />} />
             <Route path="pages/submitConfirm" element={<SubmitConfirmPage />} />
+            <Route path="*" element={<Page404Page />} />
           </Routes>        
         <Footer />
       </BrowserRouter>
