@@ -41,14 +41,14 @@ body.bg-link {
     align-items: flex-end;
 }
 .img-resize {
-    width: 100%; 
+    width: 90%; 
     height: auto; 
 }
 .navbar-links {
     display: flex;
     justify-content: space-between;
     align-items: flex-end; 
-    flex-grow: 1; min-height: 300px;
+    flex-grow: 1; min-height: 240px;
 }
 .navbar-links a {
     color: beige;
@@ -57,7 +57,7 @@ body.bg-link {
     font-style: italic;
     text-decoration: none;
     position: relative;
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
     margin: 0 20px;
     transition: color 0.3s, opacity 0.3s;
 }
