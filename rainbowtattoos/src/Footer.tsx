@@ -13,7 +13,7 @@ export function Footer(): JSX.Element {
                     <Col className='d-flex justify-content-center' md={4}> 
                     <div className='mt-2'>
                         <p className='footer-text'>
-                            Théo Tattoo: Piercing et tatouage<br/>
+                            Théo Tattoo<br/>
                             414 rue Principale, suite 201<br/>
                             Vallée-Jonction, Québec
                         </p>
