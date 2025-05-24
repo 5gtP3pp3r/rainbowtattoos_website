@@ -22,9 +22,9 @@ export function Home(): JSX.Element {
 
     return (      
         <Container fluid >            
-            <Row className='g-5 mt-5 mx-0'>         
+            <Row className='g-5 mt-5 '>         
                 <Col lg={12} xl={6}> 
-                    <div className='ms-3'>    
+                    <div className='ms-2'>    
                         <p className='main-text'>
                             BlabLaBla texte pour présenter Kyle et son coin perso dans le studio 
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
@@ -36,7 +36,7 @@ export function Home(): JSX.Element {
                     </div>     
                     {/* Promo du jour */}
                     {imagesList.length > 0 ? (
-                        <div className='ms-3'>
+                        <div className=''>
                             <div>
                                 <p className='promo d-flex justify-content-center mt-5'> Promo du jour!</p>
                             </div>
@@ -44,20 +44,24 @@ export function Home(): JSX.Element {
                             <ImageListing imagesList={imagesList} imgPath="../images/imagesPromo/" />
                         </div>
                     ) : (
-                        <div className='ms-3 d-flex justify-content-center mt-5'>
+                        <div className='ms-1 d-flex justify-content-center mt-5'>
                             <p className='main-text'>Pas de promotions pour l’instant.</p>
                         </div>
                     )} 
 
                 </Col>                    
                 <Col lg={12} xl={6}>  
-                    <Row className='mb-5' >  
-                        <Col className='d-flex justify-content-center mx-0 mt-3'> 
-                            <img src="../images/style/studio.jpeg" alt="" width={600} height={'auto'} className="img-blur-border"/>
+                    <Row className='mb-5 d-flex justify-content-center' >  
+                        <Col className='d-flex justify-content-center  mt-3'> 
+                            <img 
+                                src="../images/style/studio.jpeg" 
+                                style={{ width: '600px', minWidth: '300px', height: 'auto' }}  
+                                className="img-blur-border"
+                            />
                         </Col>
-                        {/*<Col lg={12} xl={6} className='d-flex justify-content-center mx-0 mt-5'>
-                            <img src="../images/style/studio2.jpeg" alt="" width={100} height={'auto'} className="img-blur-border"/>
-                        </Col>*/}
+                        <Col lg={12} xl={6} className='d-flex justify-content-center mt-5'>
+                            <img src="../images/style/studio2.jpeg" alt="" width={300} height={'auto'} className="img-blur-border"/>
+                        </Col>
                         
                     </Row>                                  
                 </Col> 
