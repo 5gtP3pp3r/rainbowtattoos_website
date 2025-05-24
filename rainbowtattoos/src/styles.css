@@ -18,16 +18,16 @@ body::before {
     z-index: -1; 
 }
 body.bg-home {
-    background-image: url("./images/backGrounds/Acceuil_BG2.png"); 
+    background-image: url("/images/backGrounds/Acceuil_BG2.png"); 
 }
 body.bg-sketch {
-    background-image: url("./images/backGrounds/Portfolio_BG2.png");
+    background-image: url("/images/backGrounds/Portfolio_BG2.png");
 }
 /*body.bg-tattoo {
-    background-image: url("./images/backGrounds/cat_banner.jpg");
+    background-image: url("/images/backGrounds/cat_banner.jpg");
 }*/
 body.bg-link {
-    background-image: url("./images/backGrounds/Contacter_BG.png");
+    background-image: url("/images/backGrounds/Contacter_BG.png");
 }
 
 
@@ -68,7 +68,7 @@ body.bg-link {
     left: 0;
     right: 0;
     height: 30px; 
-    background-image: url('./images/style/underline.png');
+    background-image: url('/images/style/underline.png');
     background-repeat: no-repeat;
     background-size: contain;
     opacity: 0; 

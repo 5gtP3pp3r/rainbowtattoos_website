@@ -27,7 +27,7 @@ export function Footer(): JSX.Element {
                         <div className='mt-2'>
                             <p className='footer-text'>
                                 Création du site<br/>
-                                William Crépault <img src="./images/style/Wc.png" alt="WC" width={12} /><br/>
+                                William Crépault <img src="/images/style/Wc.png" alt="WC" width={12} /><br/>
                                 2025
                             </p>
                             

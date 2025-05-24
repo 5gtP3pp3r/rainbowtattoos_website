@@ -9,7 +9,7 @@ export function NavBarre(): JSX.Element {
         <Navbar collapseOnSelect expand="lg" className="navbar-container">   
             <div >
               <NavLink to="/">          
-                  <img src="./images/style/Logo_PNG.png" alt="Logo" className="navbar-left img-resize mb-5"/>          
+                  <img src="/images/style/Logo_PNG.png" alt="Logo" className="navbar-left img-resize mb-5"/>          
               </NavLink> 
             </div> 
             <Nav className="navbar-links">
