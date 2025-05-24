@@ -86,10 +86,9 @@ body.bg-link {
 
 
 .main-text {
-    font-size: 17px;
     color: beige !important;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 300px) {
     .main-text {
         font-size: 20px;
     }
@@ -100,10 +99,18 @@ body.bg-link {
     }
 }
 .promo { 
-    font-size: 30px;
     color: beige !important;
 }
-
+@media screen and (min-width: 300px) {
+    .promo {
+        font-size: 24px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .promo {
+        font-size: 30px;
+    }
+}
 
 .footer-text, h6, a {
     color: beige !important;
